@@ -8,11 +8,11 @@ tracker_type = tracker_types[1]
 
 # Criando os rastreadores
 if tracker_type == 'BOOSTING':
-    tracker = cv2.TrackerBoosting_create()
+    tracker = cv2.legacy_TrackerBoosting()
 elif tracker_type == 'MIL':
     tracker = cv2.TrackerMIL_create()
 elif tracker_type == 'KCF':
-    tracker = cv2.TrackerKCF_create()
+    tracker = cv2.legacy_TrackerKCF()
 elif tracker_type == 'TLD':
     tracker = cv2.TrackerTLD_create()
 elif tracker_type == 'MEDIANFLOW':
